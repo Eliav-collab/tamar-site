@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ישיבת תמר</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+
+        <form class="search" action="/search" method="get">
+            <button type="submit">🔍</button>
+            <input id="search" type="search" name="q" placeholder="" class="search-input">
+        </form>
+        <nav class="menu">
+            <p id="p-1">|</p>
+            <li onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" id="li-menu-1"> גלריה </li>
+            <p id="p-2">|</p>
+            <li onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" id="li-menu-2"> מרחב הלמידה </li>
+            <p id="p-3">|</p>
+            <li onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" id="li-menu-3"> תוגנית שנתית </li>
+            <p id="p-4">|</p>
+            <li onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" id="li-menu-4"> אז-מה קורה </li>
+            <p id="p-5">|</p>
+            <li onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" id="li-menu-5"> מגמות הלימוד </li>
+            <p id="p-6">|</p>
+            <li onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" id="li-menu-6"> אודות </li>
+            <p id="p-7">|</p>
+        </nav>
+        <div class="div_profile">
+            <img class="profile" src="images/profile.png" alt="לא נמצאה תמונה">
+        </div>
+        <hr>
+        <div class="div_space">
+            <div class="div_opened">
+                <a id="li-opened-1"></a>
+                <a id="li-opened-2"></a>
+                <a id="li-opened-3"></a>
+                <a id="li-opened-4"></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <nav class="images">
+            <button class="button-left" onclick="left()">❮</button>
+            <img id="image" src="images/image1.jpg" alt="לא נמצאה תמונה">
+            <button class="button-right" onclick="right()">❯</button>
+        </nav>
+
+        <span class="span">
+            <h2>הישיבה התיכונית מדעית תמר</h2>
+            <p> ישיבת תמר שברמת הגולן, מכוונת להצמיח דור חדש של אנשי תורה ומדע המשלבים מצוינות בכל התחומים. מדע וחדשנות
+                טכנולוגית, לימוד תורה מעמיק וחינוך ערכי הרואה חשיבות עליונה בתרומה למדינה ולאהבת הארץ. אנו מזמינים אתכם,
+                תלמידים מכל רחבי הארץ, בעלי הישגים ושאיפה להגיע הכי רחוק שאפשר, להצטרף אלינו למסע משמעותי ומאתגר במסגרת
+                חינוכית שמשלבת מצוינות לימודית תורנית וחברתית </p>
+            <p>מפגשי חשיפה בזום יתקיימו בעז"ה בשעה 20:30 ביום רביעי ט"ו טבת 15.1.25 וביום ראשון כ"ו טבת 26.1.25 <a
+                    href="https://edu-il.zoom.us/j/2995588592">קישור לזום היכרות </a></p>
+            <p>הרישום לישיבה מתבצע באתר החמ"ד בלבד וייפתח בכ"א טבת (יום שלישי 21/1) <a
+                    href="https://rishum.app/hemed">קישור לאתר חמ"ד</a></p>
+        </span>
+    </main>
+    <footer>
+        <img src="images/image_fotoer.png" alt="לא נמצאה תמונה">
+
+    </footer>
+
+    <audio id="audio" autoplay loop>
+        <source src="audio.mp3" type="audio/mpeg">
+        <source src="audio.ogg" type="audio/ogg">
+        הדפדפן שלך אינו תומך בהשמעת אודיו.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
