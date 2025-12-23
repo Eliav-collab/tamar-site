@@ -97,7 +97,7 @@ function image() {
 }
 
 function left() {
-    i --
+    i --;
     if(i === 0){
         i = 6;
     }
