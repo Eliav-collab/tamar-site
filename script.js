@@ -88,7 +88,7 @@ function mouseOut(i) {
 
 let i = 2;
 function image() {
-    document.getElementById('image').src = 'images/image' + i + '.jpg'
+    document.getElementById('image').src = 'images/image' + i + '.jpg';
     i++;
     if (i >= 7) {
         i = 1;
@@ -97,11 +97,11 @@ function image() {
 }
 
 function left() {
-    i --;
+    i--;
     if(i === 0){
         i = 6;
     }
-    document.getElementById('image').src = 'images/image' + i + '.jpg'
+    document.getElementById('image').src = 'images/image' + i + '.jpg';
 }
 
 function right(){
@@ -113,11 +113,3 @@ function right(){
 }
 
 setInterval(image, 2500);
-
-document.querySelectorAll('li,a,button').forEach(item => {
-    item.addEventListener('click', () => {
-        const audio = document.getElementById('audio');
-        audio.loop = false;
-        audio.play();
-    });
-});
