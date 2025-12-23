@@ -87,13 +87,13 @@ function mouseOut(i) {
 }
 
 let i = 2;
-function image() {
-    document.getElementById('image').src = 'images/image' + i + '.jpg';
+
+function right(){
     i++;
-    if (i >= 7) {
-        i = 1;
+    if(i === 7){
+        i = 1
     }
-    
+    document.getElementById('image').src = 'images/image' + i + '.jpg'
 }
 
 function left() {
@@ -104,12 +104,5 @@ function left() {
     document.getElementById('image').src = 'images/image' + i + '.jpg';
 }
 
-function right(){
-    i++;
-    if(i === 7){
-        i = 1
-    }
-    document.getElementById('image').src = 'images/image' + i + '.jpg'
-}
 
-setInterval(image, 2500);
+setInterval(right, 2500);
